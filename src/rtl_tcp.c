@@ -385,6 +385,7 @@ int main(int argc, char **argv)
 	struct addrinfo *ai;
 	struct addrinfo *aiHead;
 	struct addrinfo  hints;
+    memset(&hints, 0, sizeof(hints));
 	char hostinfo[NI_MAXHOST];
 	char portinfo[NI_MAXSERV];
 	char remhostinfo[NI_MAXHOST];
